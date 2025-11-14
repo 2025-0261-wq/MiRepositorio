@@ -76,7 +76,8 @@ while True:
     elif opcion == "9":
         palabra = input("Introduce una palabra: ").lower()
         for vocal in "aeiou":
-            print(f"{vocal}: {palabra.count(vocal)}")
+            if vocal in palabra:
+             print(f"{vocal}: {palabra.count(vocal)}")
 
     elif opcion == "10":
         precios = [50, 75, 46, 22, 80, 65, 8]
